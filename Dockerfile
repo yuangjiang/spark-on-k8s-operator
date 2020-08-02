@@ -43,4 +43,4 @@ RUN apt-get update \
 COPY hack/gencerts.sh /usr/bin/
 
 COPY entrypoint.sh /usr/bin/
-ENTRYPOINT ["/usr/bin/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh","-c","/usr/bin/entrypoint.sh"]
